@@ -1,0 +1,101 @@
+****************************************************************************************************
+DOTNET FORMAT (CODE STYLE)
+https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/csharp-formatting-options
+
+****************************************************************************************************
+root = true
+
+[*]
+indent_style = space
+
+[*.cs]
+charset = utf-8
+indent_size = 4
+insert_final_newline = true
+trim_trailing_whitespace = true
+csharp_indent_block_contents = true
+csharp_indent_braces = false
+csharp_indent_case_contents = true
+csharp_indent_case_contents_when_block = true
+csharp_indent_switch_labels = true
+csharp_new_line_before_catch = true
+csharp_new_line_before_comma = true
+csharp_new_line_before_dot = true
+csharp_new_line_before_else = true
+csharp_new_line_before_finally = true
+csharp_new_line_before_open_brace = all
+csharp_new_line_before_open_parenthesis_in_method_declaration = true
+csharp_style_var_elsewhere = true:true
+csharp_style_var_for_built_in_types = true:true
+csharp_style_var_when_type_is_apparent = true:true
+csharp_wrapping_keep_simple_method_on_single_line = false
+dotnet_code_quality.remove_unnecessary_import_directives = true:true
+dotnet_diagnostic.CS0109.parameters = 3
+dotnet_style_allow_multiple_blank_lines_experimental = false:false
+dotnet_style_qualification_for_field = true:true
+dotnet_style_qualification_for_method = true:true
+dotnet_style_qualification_for_property = true:true
+
+****************************************************************************************************
+ROSLYN (CODE ANALYZER)
+https://learn.microsoft.com/pt-br/dotnet/fundamentals/code-analysis/overview
+https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers
+
+****************************************************************************************************
+
+dotnet_diagnostic.CA1804.severity = error # Remove unused locals
+dotnet_diagnostic.CA5359.severity = error # Do not disable certificate validation
+dotnet_diagnostic.CS0168.severity = error # The variable [var] is declared but never used
+dotnet_diagnostic.CS0169.severity = none # The private field class member is never used
+dotnet_diagnostic.CS0219.severity = error # The variable [variable] is assigned but its value is never used
+dotnet_diagnostic.CS8601.severity = error # Possible null reference assignment
+dotnet_diagnostic.CS8618.severity = none # Non-nullable field must contain a non-null value when exiting constructor
+dotnet_diagnostic.CS8632.severity = none # The annotation for nullable reference types should only be used in code within a nullable annotations context
+
+****************************************************************************************************
+
+SONAR (CODE ANALYZER)
+https://sonarsource.github.io/rspec/#/rspec/?lang=csharp
+https://www.nuget.org/packages/SonarAnalyzer.CSharp
+https://www.sonarsource.com/products/sonarlint/
+
+****************************************************************************************************
+
+dotnet_diagnostic.S101.severity = warning # Class names should comply with a naming convention
+dotnet_diagnostic.S107.severity = warning # The constructor has more parameters than recommended
+dotnet_diagnostic.S927.severity = error # Parameter names should match base declaration and other partial definitions
+dotnet_diagnostic.S1104.severity = warning # Make this field private and encapsulate it in a public property
+dotnet_diagnostic.S1109.severity = none # A close curly brace should be located at the beginning of a line
+dotnet_diagnostic.S1118.severity = none # Utility classes should not have public constructors
+dotnet_diagnostic.S113.severity = none # Files should contain an empty newline at the end
+dotnet_diagnostic.S1135.severity = warning # Complete the task associated to this TODO comment
+dotnet_diagnostic.S1144.severity = none # Unused private types or members should be removed
+dotnet_diagnostic.S1186.severity = none # Methods should not be empty
+dotnet_diagnostic.S121.severity = none # Control structures should use curly braces
+dotnet_diagnostic.S125.severity = error # Remove this commented out code
+dotnet_diagnostic.S1481.severity = error # Remove the unused local variable
+dotnet_diagnostic.S2077.severity = error # Make sure using a dynamically formatted SQL query is safe here
+dotnet_diagnostic.S2094.severity = none # Classes should not be empty
+dotnet_diagnostic.S2139.severity = none # Exceptions should be either logged or rethrown but not both
+dotnet_diagnostic.S2259.severity = warning # Null pointers should not be dereferenced
+dotnet_diagnostic.S2737.severity = error # Add logic to this catch clause or eliminate it and rethrow the exception automatically
+dotnet_diagnostic.S2344.severity = none # Enumeration type names should not have suffixes
+dotnet_diagnostic.S3168.severity = error # async methods should not return void
+dotnet_diagnostic.S3267.severity = none # Loops should be simplified with LINQ expressions
+dotnet_diagnostic.S3445.severity = error # Use [throw] instead of [throw ex] to preserve the stack trace
+dotnet_diagnostic.S3626.severity = none # Jump statements should not be redundant
+dotnet_diagnostic.S3776.severity = error # Refactor this method to reduce its Cognitive Complexity
+dotnet_diagnostic.S3887.severity = error # Use an immutable collection or reduce the accessibility of the non-private readonly field Keys
+dotnet_diagnostic.S3903.severity = error # Not found a namespace
+dotnet_diagnostic.S3923.severity = error # This conditional operation returns the same value whether the condition is true or false
+dotnet_diagnostic.S3925.severity = warning # Update this implementation of ISerializable to conform to the recommended serialization pattern
+dotnet_diagnostic.S3972.severity = none # Conditionals should start on new lines
+dotnet_diagnostic.S3973.severity = none # A conditionally executed single line should be denoted by indentation
+dotnet_diagnostic.S4144.severity = error # Methods should not have identical implementations
+dotnet_diagnostic.S4487.severity = error # Unread private fields should be removed
+dotnet_diagnostic.S4830.severity = error # Server certificates should be verified during SSL/TLS connections
+dotnet_diagnostic.S4899.severity = warning # Handle the exception or explain in a comment why it can be ignored
+dotnet_diagnostic.S5332.severity = warning # Using clear-text protocols is security-sensitive
+dotnet_diagnostic.S6580.severity = none # Use a format provider when parsing date and time
+dotnet_diagnostic.S6678.severity = error # Use PascalCase for named placeholders
+dotnet_diagnostic.S6966.severity = warning # Awaitable method should be used

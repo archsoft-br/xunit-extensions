@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7745BE5C-535D-4741-85D1-FB494C755B6A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{342C30BC-4B2E-45E6-B588-5912468128EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchSoft.XUnit.Extensions", "src\ArchSoft.XUnit.Extensions\ArchSoft.XUnit.Extensions.csproj", "{E5C796F1-5766-4B50-A7AF-9850CC575637}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchSoft.XUnit.Extensions.UnitTest", "test\ArchSoft.XUnit.Extensions.UnitTest\ArchSoft.XUnit.Extensions.UnitTest.csproj", "{39284D2C-A33C-41A0-ADFE-27ED054ACE50}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E5C796F1-5766-4B50-A7AF-9850CC575637} = {7745BE5C-535D-4741-85D1-FB494C755B6A}
+		{39284D2C-A33C-41A0-ADFE-27ED054ACE50} = {342C30BC-4B2E-45E6-B588-5912468128EC}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E5C796F1-5766-4B50-A7AF-9850CC575637}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5C796F1-5766-4B50-A7AF-9850CC575637}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5C796F1-5766-4B50-A7AF-9850CC575637}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5C796F1-5766-4B50-A7AF-9850CC575637}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39284D2C-A33C-41A0-ADFE-27ED054ACE50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39284D2C-A33C-41A0-ADFE-27ED054ACE50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39284D2C-A33C-41A0-ADFE-27ED054ACE50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39284D2C-A33C-41A0-ADFE-27ED054ACE50}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
